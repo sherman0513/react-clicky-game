@@ -1,50 +1,50 @@
 [
     {
         "id": 1,
-        "image": ""
+        "image": "./images/avalanche.png"
     },
     {
         "id": 2,
-        "image": ""
+        "image": "./images/blues.png"
     },
     {
         "id": 3,
-        "image": ""
+        "image": "./images/capitals.png"
     },
     {
         "id": 4,
-        "image": ""
+        "image": "./images/coyotes.png"
     },
     {
         "id": 5,
-        "image": ""
+        "image": "./images/jets.png"
     },
     {
         "id": 6,
-        "image": ""
+        "image": "./images/leafs.png"
     },
     {
         "id": 7,
-        "image": ""
+        "image": "./images/lightning.png"
     },
     {
         "id": 8,
-        "image": ""
+        "image": "./images/nordiques.png"
     },
     {
         "id": 9,
-        "image": ""
+        "image": "./images/north-stars.png"
     },
     {
         "id": 10,
-        "image": ""
+        "image": "./images/rangers.png"
     },
     {
         "id": 11,
-        "image": ""
+        "image": "redwings.png"
     },
     {
         "id": 12,
-        "image": ""
+        "image": "whalers.png"
     }
 ]
