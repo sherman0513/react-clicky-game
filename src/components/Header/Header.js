@@ -7,7 +7,7 @@ function Header(props) {
             <div className="header col-md-12 text-center">
                 <div>Clicky Game</div>
             </div>
-            <div>
+            <div className="col-md-12 text-center">
                 Click on an image to begin.  Don't click on the same image twice or you will lose
             </div>
             <div>
