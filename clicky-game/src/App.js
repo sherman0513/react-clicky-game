@@ -20,7 +20,6 @@ class App extends React.Component {
     highScore: 0,
     charactersClicked: [],
     winner: '',
-
   }
 
   characterClick = id => {
@@ -44,11 +43,13 @@ class App extends React.Component {
     this.setState({
       score: newScore,
     });
-    if (newScore >= this.state.highScore) {
+    if (newScore > this.state.highScore) {
       this.setState({ highScore: newScore });
-    }
-    else if (newScore === 12) {
-      this.setState({ winner: 'He SHOOTS and SCORES!!!' })
+    };
+    if (newScore === 12) {
+      this.setState({ hightScore: 12})
+      alert('He SHOOTS and he SCORES!!!')
+      this.gameOver();
     }
     this.characterShuffle();
   }
@@ -56,7 +57,6 @@ class App extends React.Component {
   gameOver = () => {
     this.setState({
       score: 0,
-      highScore: this.state.highScore,
       charactersClicked: [],
       winner: '',
     });
@@ -68,8 +68,6 @@ class App extends React.Component {
         <Header
           score={this.state.score}
           highScore={this.state.highScore}
-          winner={this.state.winner}
-          loser={this.state.loser}
         />
         <Wrapper>
           {
@@ -77,6 +75,7 @@ class App extends React.Component {
               <CharacterCard
                 characterClick={this.characterClick}
                 id={characters.id}
+                key={characters.id}
                 image={characters.image}
               />
             )
