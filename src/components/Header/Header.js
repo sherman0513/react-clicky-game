@@ -8,6 +8,9 @@ function Header(props) {
                 <div>Clicky Game</div>
             </div>
             <div>
+                Click on an image to begin.  Don't click on the same image twice or you will lose
+            </div>
+            <div>
                 <div className="col-md-6">Score: {props.score} </div>
                 <div className="col-md-6">High Score: {props.highScore} </div>
                 <div> {props.winner} </div>
